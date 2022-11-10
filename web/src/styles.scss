@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+:root {
+    --cinza: #444;
+    --dourado: #dec129;
+    --error: #DC3545;
+    --azul: #007bff
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: var(--cinza);
+}
+
+a {
+  color: var(--cinza);
+  transition: .4s;
+
+  &:hover {
+    color: var(--dourado);
+  }
+
+  &:link, :visited {
+    color: var(--cinza);
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  margin: 0 auto;
+  gap: 1em;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+
+    label {
+      font-weight: bold;
+      font-size: .9em;
+    }
+
+    input, textarea {
+      padding: 0.6em;
+      color: var(--cinza);
+      font-size: .8em;
+      resize: none;
+    }
+  }
+
+  input[type="submit"] {
+    background-color: #efefef;
+    border: 2px solid transparent;
+    padding: 0.6em 1em;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: .4s;
+
+    &:hover {
+      color: var(--dourado);
+      border-color: var(--dourado);
+      background-color: transparent;
+    }
+  }
+}
+
+.validation-error p {
+  color: var(--error);
+  border-left: 3px solid var(--error);
+  padding-left: 0.2em;
+}
+
+.btn-edit, .btn-remove {
+  border: 1px solid #efefef;
+  padding: .4em 1em;
+  font-size: 1em;
+  margin: 0 .5em;
+  cursor: pointer;
+  background-color: #fff;
+  transition: .4s;
+
+  fa-icon {
+    margin-right: .2em;
+  }
+}
+
+.btn-edit {
+  border-color: var(--azul);
+  color: var(--azul);
+
+  path {
+    border-color: var(--azul);
+    color: var(--azul);
+  }
+
+  &:hover {
+    background-color: var(--azul);
+    color: #fff;
+
+    path {
+      background-color: var(--azul);
+      color: #fff;
+    }
+  }
+}
+
+.btn-remove, .btn-remove path {
+  border-color: var(--error);
+  color: var(--error);
+
+  path {
+    border-color: var(--error);
+    color: var(--error);
+  }
+
+  &:hover {
+    background-color: var(--error);
+    color: #fff;
+
+    path {
+      background-color: var(--error);
+      color: #fff;
+    }
+  }
+}

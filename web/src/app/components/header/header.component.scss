@@ -1,0 +1,44 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  border-bottom: 1px solid var(--cinza);
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1em;
+
+    a {
+        padding: 0.1em 0.3em;
+    }
+
+    #add a {
+      color: var(--dourado);
+
+      &:hover {
+        background-color: #efefef;
+      }
+    }
+  }
+
+  .brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-right: 0.6em;
+    }
+
+    > h2 {
+      transition: .4s;
+
+      &:hover {
+        color: var(--dourado);
+      }
+    }
+  }
+}
