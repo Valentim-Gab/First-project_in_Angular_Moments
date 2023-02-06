@@ -1,5 +1,12 @@
 # First project in Angular -> Moments
+Project created from teachings in Matheus Battisti's Angular 13 course - Hora de Codar.
 
 ```bash
- Project created from teachings in Matheus Battisti's Angular 13 course - Hora de Codar.
+
+Using: {
+  Angular;
+  HTML;
+  SCSS;
+  TypeScript.
+}
 ```
