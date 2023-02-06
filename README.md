@@ -3,7 +3,7 @@ Project created from teachings in Matheus Battisti's Angular 13 course - Hora de
 
 ```bash
 
-Using: {
+Using {
   Angular;
   HTML;
   SCSS;
